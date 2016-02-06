@@ -1,0 +1,745 @@
+LOG--------: Packet has been sent from 4 to 1
+LOG--------: Packet has been sent from 4 to 3
+
+main(): event received.  t=1.634395043878882, node=2
+  src=3, dest=2, contents=[999, 2, 2, 0, 3]
+heyy false
+LOG--------Entity 2 says: Node 2 is updated.
+
+           via
+ D2 |   0   3
+----+---------
+   0|   3 999
+   1| 999   4
+   3| 999   2
+   4| 999   5
+LOG--------At Node 2, the distance vector has been updated.
+LOG--------Packet sent from 2 to 0
+LOG--------At Node 2, the distance vector has been updated.
+LOG--------Packet sent from 2 to 3
+
+main(): event received.  t=2.571429517627691, node=4
+  src=3, dest=4, contents=[999, 2, 2, 0, 3]
+LOG--------Entity 4 says: Node 4 is updated.
+
+         via
+ D4 |   1   3
+----+--------
+   0| 999 999
+   1|   8   5
+   2| 999   5
+   3| 999   3
+LOG--------At Node 4, the distance vector has been updated.
+LOG--------Packet sent from 4 to 1
+LOG--------At Node 4, the distance vector has been updated.
+LOG--------Packet sent from 4 to 3
+
+main(): event received.  t=4.875522284192817, node=1
+  src=4, dest=1, contents=[999, 8, 999, 3, 0]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|   4 999 999
+   2| 999 999 999
+   3| 999   2  11
+   4| 999 999   8
+
+main(): event received.  t=5.531550421326854, node=1
+  src=3, dest=1, contents=[999, 2, 2, 0, 3]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|   4 999 999
+   2| 999   4 999
+   3| 999   2  11
+   4| 999   5   8
+LOG--------At Node 1, the distance vector has been updated.
+LOG--------Packet sent from 1 to 0
+LOG--------At Node 1, the distance vector has been updated.
+LOG--------Packet sent from 1 to 3
+LOG--------At Node 1, the distance vector has been updated.
+LOG--------Packet sent from 1 to 4
+
+main(): event received.  t=6.8579775943626675, node=0
+  src=2, dest=0, contents=[3, 999, 0, 2, 999]
+LOG--------Entity 0 says: Node 0 is updated.
+
+           via
+ D0 |   1   2  
+----+----------
+   1|   4 999
+   2| 999   3
+   3| 999   5
+   4| 999 999
+LOG--------At Node 0, the distance vector has been updated.
+LOG--------Packet sent from 0 to 1
+LOG--------At Node 0, the distance vector has been updated.
+LOG--------Packet sent from 0 to 2
+
+main(): event received.  t=7.306856502299135, node=0
+  src=1, dest=0, contents=[4, 0, 999, 2, 8]
+LOG--------Entity 0 says: Node 0 is updated.
+
+           via
+ D0 |   1   2  
+----+----------
+   1|   4 999
+   2| 999   3
+   3|   6   5
+   4|  12 999
+LOG--------At Node 0, the distance vector has been updated.
+LOG--------Packet sent from 0 to 1
+LOG--------At Node 0, the distance vector has been updated.
+LOG--------Packet sent from 0 to 2
+
+main(): event received.  t=7.623859031360317, node=1
+  src=0, dest=1, contents=[0, 4, 3, 999, 999]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|   4 999 999
+   2|   7   4 999
+   3| 999   2  11
+   4| 999   5   8
+
+main(): event received.  t=7.684793724943715, node=3
+  src=1, dest=3, contents=[4, 0, 999, 2, 8]
+falseLOG--------Entity 3 says: Node 3 is updated.
+         via
+ D3 |   1    2    4
+----+-------------
+   0|   6 999 999
+   1|   2 999 999
+   2| 999   2 999
+   4|  10 999   3
+LOG--------At Node 3, the distance vector has been updated.
+LOG--------Packet sent from 3 to 1
+LOG--------At Node 3, the distance vector has been updated.
+LOG--------Packet sent from 3 to 2
+LOG--------At Node 3, the distance vector has been updated.
+LOG--------Packet sent from 3 to 4
+
+main(): event received.  t=7.714452113292187, node=2
+  src=0, dest=2, contents=[0, 4, 3, 999, 999]
+heyy false
+LOG--------Entity 2 says: Node 2 is updated.
+
+           via
+ D2 |   0   3
+----+---------
+   0|   3 999
+   1|   7   4
+   3| 999   2
+   4| 999   5
+
+main(): event received.  t=8.3246528311221, node=0
+  src=1, dest=0, contents=[4, 0, 4, 2, 5]
+LOG--------Entity 0 says: Node 0 is updated.
+
+           via
+ D0 |   1   2  
+----+----------
+   1|   4 999
+   2|   8   3
+   3|   6   5
+   4|   9 999
+LOG--------At Node 0, the distance vector has been updated.
+LOG--------Packet sent from 0 to 1
+LOG--------At Node 0, the distance vector has been updated.
+LOG--------Packet sent from 0 to 2
+
+main(): event received.  t=8.791753451742116, node=4
+  src=1, dest=4, contents=[4, 0, 999, 2, 8]
+LOG--------Entity 4 says: Node 4 is updated.
+
+         via
+ D4 |   1   3
+----+--------
+   0|   9 999
+   1|   5   5
+   2| 999   5
+   3|   7   3
+LOG--------At Node 4, the distance vector has been updated.
+LOG--------Packet sent from 4 to 1
+LOG--------At Node 4, the distance vector has been updated.
+LOG--------Packet sent from 4 to 3
+
+main(): event received.  t=8.975145779020062, node=3
+  src=4, dest=3, contents=[999, 8, 999, 3, 0]
+falseLOG--------Entity 3 says: Node 3 is updated.
+         via
+ D3 |   1    2    4
+----+-------------
+   0|   6 999 999
+   1|   2 999  11
+   2| 999   2 999
+   4|  10 999   3
+
+main(): event received.  t=9.89482790321117, node=3
+  src=2, dest=3, contents=[3, 999, 0, 2, 999]
+falseLOG--------Entity 3 says: Node 3 is updated.
+         via
+ D3 |   1    2    4
+----+-------------
+   0|   6   5 999
+   1|   2 999  11
+   2| 999   2 999
+   4|  10 999   3
+LOG--------At Node 3, the distance vector has been updated.
+LOG--------Packet sent from 3 to 1
+LOG--------At Node 3, the distance vector has been updated.
+LOG--------Packet sent from 3 to 2
+LOG--------At Node 3, the distance vector has been updated.
+LOG--------Packet sent from 3 to 4
+
+main(): event received.  t=11.905603346889416, node=1
+  src=4, dest=1, contents=[999, 5, 5, 3, 0]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|   4 999 999
+   2|   7   4  10
+   3| 999   2   8
+   4| 999   5   5
+
+main(): event received.  t=11.916378407030162, node=4
+  src=1, dest=4, contents=[4, 0, 4, 2, 5]
+LOG--------Entity 4 says: Node 4 is updated.
+
+         via
+ D4 |   1   3
+----+--------
+   0|   9 999
+   1|   5   5
+   2|   9   5
+   3|   7   3
+
+main(): event received.  t=12.431669321480225, node=1
+  src=0, dest=1, contents=[0, 4, 3, 5, 999]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|   4 999 999
+   2|   7   4  10
+   3|   9   2   8
+   4| 999   5   5
+
+main(): event received.  t=13.131678768697341, node=1
+  src=3, dest=1, contents=[6, 2, 2, 0, 3]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|   4   8 999
+   2|   7   4  10
+   3|   9   2   8
+   4| 999   5   5
+
+main(): event received.  t=13.701455844337797, node=2
+  src=0, dest=2, contents=[0, 4, 3, 5, 999]
+heyy false
+LOG--------Entity 2 says: Node 2 is updated.
+
+           via
+ D2 |   0   3
+----+---------
+   0|   3 999
+   1|   7   4
+   3|   8   2
+   4| 999   5
+
+main(): event received.  t=15.7582117128761, node=1
+  src=4, dest=1, contents=[9, 5, 5, 3, 0]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|   4   8  14
+   2|   7   4  10
+   3|   9   2   8
+   4| 999   5   5
+
+main(): event received.  t=15.859879947788905, node=0
+  src=2, dest=0, contents=[3, 4, 0, 2, 5]
+LOG--------Entity 0 says: Node 0 is updated.
+
+           via
+ D0 |   1   2  
+----+----------
+   1|   4   7
+   2|   8   3
+   3|   6   5
+   4|   9   8
+LOG--------At Node 0, the distance vector has been updated.
+LOG--------Packet sent from 0 to 1
+LOG--------At Node 0, the distance vector has been updated.
+LOG--------Packet sent from 0 to 2
+
+main(): event received.  t=16.384452309316572, node=3
+  src=1, dest=3, contents=[4, 0, 4, 2, 5]
+falseLOG--------Entity 3 says: Node 3 is updated.
+         via
+ D3 |   1    2    4
+----+-------------
+   0|   6   5 999
+   1|   2 999  11
+   2|   6   2 999
+   4|   7 999   3
+
+main(): event received.  t=16.45609886658056, node=4
+  src=3, dest=4, contents=[6, 2, 2, 0, 3]
+LOG--------Entity 4 says: Node 4 is updated.
+
+         via
+ D4 |   1   3
+----+--------
+   0|   9   9
+   1|   5   5
+   2|   9   5
+   3|   7   3
+
+main(): event received.  t=16.990018340946605, node=2
+  src=3, dest=2, contents=[6, 2, 2, 0, 3]
+heyy false
+LOG--------Entity 2 says: Node 2 is updated.
+
+           via
+ D2 |   0   3
+----+---------
+   0|   3   8
+   1|   7   4
+   3|   8   2
+   4| 999   5
+
+main(): event received.  t=16.990605124067386, node=2
+  src=0, dest=2, contents=[0, 4, 3, 5, 12]
+heyy false
+LOG--------Entity 2 says: Node 2 is updated.
+
+           via
+ D2 |   0   3
+----+---------
+   0|   3   8
+   1|   7   4
+   3|   8   2
+   4|  15   5
+
+main(): event received.  t=17.406817320693726, node=3
+  src=4, dest=3, contents=[999, 5, 5, 3, 0]
+falseLOG--------Entity 3 says: Node 3 is updated.
+         via
+ D3 |   1    2    4
+----+-------------
+   0|   6   5 999
+   1|   2 999   8
+   2|   6   2   8
+   4|   7 999   3
+
+main(): event received.  t=18.882065434499225, node=4
+  src=3, dest=4, contents=[5, 2, 2, 0, 3]
+LOG--------Entity 4 says: Node 4 is updated.
+
+         via
+ D4 |   1   3
+----+--------
+   0|   9   8
+   1|   5   5
+   2|   9   5
+   3|   7   3
+LOG--------At Node 4, the distance vector has been updated.
+LOG--------Packet sent from 4 to 1
+LOG--------At Node 4, the distance vector has been updated.
+LOG--------Packet sent from 4 to 3
+
+main(): event received.  t=19.547317794884194, node=1
+  src=0, dest=1, contents=[0, 4, 3, 5, 12]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|   4   8  14
+   2|   7   4  10
+   3|   9   2   8
+   4|  16   5   5
+
+main(): event received.  t=19.54824259999426, node=3
+  src=2, dest=3, contents=[3, 4, 0, 2, 5]
+falseLOG--------Entity 3 says: Node 3 is updated.
+         via
+ D3 |   1    2    4
+----+-------------
+   0|   6   5 999
+   1|   2   6   8
+   2|   6   2   8
+   4|   7   7   3
+
+main(): event received.  t=20.741397194998765, node=3
+  src=4, dest=3, contents=[9, 5, 5, 3, 0]
+falseLOG--------Entity 3 says: Node 3 is updated.
+         via
+ D3 |   1    2    4
+----+-------------
+   0|   6   5  12
+   1|   2   6   8
+   2|   6   2   8
+   4|   7   7   3
+
+main(): event received.  t=20.95305624289391, node=1
+  src=0, dest=1, contents=[0, 4, 3, 5, 9]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|   4   8  14
+   2|   7   4  10
+   3|   9   2   8
+   4|  13   5   5
+
+main(): event received.  t=21.964950816976764, node=1
+  src=3, dest=1, contents=[5, 2, 2, 0, 3]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|   4   7  14
+   2|   7   4  10
+   3|   9   2   8
+   4|  13   5   5
+
+main(): event received.  t=23.259281604971157, node=1
+  src=0, dest=1, contents=[0, 4, 3, 5, 8]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|   4   7  14
+   2|   7   4  10
+   3|   9   2   8
+   4|  12   5   5
+
+main(): event received.  t=24.893839179701207, node=2
+  src=0, dest=2, contents=[0, 4, 3, 5, 9]
+heyy false
+LOG--------Entity 2 says: Node 2 is updated.
+
+           via
+ D2 |   0   3
+----+---------
+   0|   3   8
+   1|   7   4
+   3|   8   2
+   4|  12   5
+
+main(): event received.  t=25.466840681548696, node=2
+  src=3, dest=2, contents=[5, 2, 2, 0, 3]
+heyy false
+LOG--------Entity 2 says: Node 2 is updated.
+
+           via
+ D2 |   0   3
+----+---------
+   0|   3   7
+   1|   7   4
+   3|   8   2
+   4|  12   5
+
+main(): event received.  t=26.60768958359236, node=3
+  src=4, dest=3, contents=[8, 5, 5, 3, 0]
+falseLOG--------Entity 3 says: Node 3 is updated.
+         via
+ D3 |   1    2    4
+----+-------------
+   0|   6   5  11
+   1|   2   6   8
+   2|   6   2   8
+   4|   7   7   3
+
+main(): event received.  t=28.82305427764105, node=1
+  src=4, dest=1, contents=[8, 5, 5, 3, 0]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|   4   7  13
+   2|   7   4  10
+   3|   9   2   8
+   4|  12   5   5
+
+main(): event received.  t=29.651561885023455, node=2
+  src=0, dest=2, contents=[0, 4, 3, 5, 8]
+heyy false
+LOG--------Entity 2 says: Node 2 is updated.
+
+           via
+ D2 |   0   3
+----+---------
+   0|   3   7
+   1|   7   4
+   3|   8   2
+   4|  11   5
+
+main(): event received.  t=10000.0, node=0
+State of the system at t=29.651561885023455, before the link cost change. 
+	0	1	2	3	4	
+0:	0	4	3	5	8	
+1:	4	0	4	2	5	
+2:	3	4	0	2	5	
+3:	5	2	2	0	3	
+4:	8	5	5	3	0	
+  Link cost change.
+LOG--------Packet sent from 0 to 1
+LOG--------Packet sent from 0 to 2
+LOG--------Packet sent from 1 to 0
+LOG--------Packet sent from 1 to 3
+LOG--------Packet sent from 1 to 4
+
+main(): event received.  t=10002.044587367966, node=1
+  src=0, dest=1, contents=[0, 20, 3, 5, 8]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|  20   7  13
+   2|   7   4  10
+   3|   9   2   8
+   4|  12   5   5
+
+main(): event received.  t=10002.67214210612, node=3
+  src=1, dest=3, contents=[20, 0, 4, 2, 5]
+trueLOG--------Entity 3 says: Node 3 is updated.
+         via
+ D3 |   1    2    4
+----+-------------
+   0|   6   5  11
+   1|   2   6   8
+   2|   6   2   8
+   4|   7   7   3
+LOG--------At Node 3, the distance vector has been updated.
+LOG--------Packet sent from 3 to 1
+LOG--------At Node 3, the distance vector has been updated.
+LOG--------Packet sent from 3 to 2
+LOG--------At Node 3, the distance vector has been updated.
+LOG--------Packet sent from 3 to 4
+
+main(): event received.  t=10002.95029763732, node=2
+  src=0, dest=2, contents=[0, 20, 3, 5, 8]
+heyy true
+LOG--------Entity 2 says: Node 2 is updated.
+
+           via
+ D2 |   0   3
+----+---------
+   0|   3   7
+   1|   7   4
+   3|   8   2
+   4|  11   5
+LOG--------At Node 2, the distance vector has been updated.
+LOG--------Packet sent from 2 to 0
+LOG--------At Node 2, the distance vector has been updated.
+LOG--------Packet sent from 2 to 3
+
+main(): event received.  t=10003.617118543229, node=4
+  src=1, dest=4, contents=[20, 0, 4, 2, 5]
+LOG--------Entity 4 says: Node 4 is updated.
+
+         via
+ D4 |   1   3
+----+--------
+   0|   9   8
+   1|   5   5
+   2|   9   5
+   3|   7   3
+LOG--------At Node 4, the distance vector has been updated.
+LOG--------Packet sent from 4 to 1
+LOG--------At Node 4, the distance vector has been updated.
+LOG--------Packet sent from 4 to 3
+
+main(): event received.  t=10004.094715134139, node=0
+  src=2, dest=0, contents=[3, 4, 0, 2, 5]
+LOG--------Entity 0 says: Node 0 is updated.
+
+           via
+ D0 |   1   2  
+----+----------
+   1|  20   7
+   2|   8   3
+   3|   6   5
+   4|   9   8
+LOG--------At Node 0, the distance vector has been updated.
+LOG--------Packet sent from 0 to 1
+LOG--------At Node 0, the distance vector has been updated.
+LOG--------Packet sent from 0 to 2
+
+main(): event received.  t=10004.17622782569, node=2
+  src=3, dest=2, contents=[5, 2, 2, 0, 3]
+heyy false
+LOG--------Entity 2 says: Node 2 is updated.
+
+           via
+ D2 |   0   3
+----+---------
+   0|   3   7
+   1|   7   4
+   3|   8   2
+   4|  11   5
+
+main(): event received.  t=10004.412239731408, node=1
+  src=3, dest=1, contents=[5, 2, 2, 0, 3]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|  20   7  13
+   2|   7   4  10
+   3|   9   2   8
+   4|  12   5   5
+LOG--------At Node 1, the distance vector has been updated.
+LOG--------Packet sent from 1 to 0
+LOG--------At Node 1, the distance vector has been updated.
+LOG--------Packet sent from 1 to 3
+LOG--------At Node 1, the distance vector has been updated.
+LOG--------Packet sent from 1 to 4
+
+main(): event received.  t=10005.507659246863, node=1
+  src=0, dest=1, contents=[0, 7, 3, 5, 8]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|   7   7  13
+   2|   7   4  10
+   3|   9   2   8
+   4|  12   5   5
+
+main(): event received.  t=10005.635120225874, node=2
+  src=0, dest=2, contents=[0, 7, 3, 5, 8]
+heyy false
+LOG--------Entity 2 says: Node 2 is updated.
+
+           via
+ D2 |   0   3
+----+---------
+   0|   3   7
+   1|   7   4
+   3|   8   2
+   4|  11   5
+
+main(): event received.  t=10005.726619968902, node=4
+  src=3, dest=4, contents=[5, 2, 2, 0, 3]
+LOG--------Entity 4 says: Node 4 is updated.
+
+         via
+ D4 |   1   3
+----+--------
+   0|   9   8
+   1|   5   5
+   2|   9   5
+   3|   7   3
+
+main(): event received.  t=10007.228638850693, node=3
+  src=1, dest=3, contents=[7, 0, 4, 2, 5]
+falseLOG--------Entity 3 says: Node 3 is updated.
+         via
+ D3 |   1    2    4
+----+-------------
+   0|   6   5  11
+   1|   2   6   8
+   2|   6   2   8
+   4|   7   7   3
+
+main(): event received.  t=10008.178438952687, node=0
+  src=1, dest=0, contents=[20, 0, 4, 2, 5]
+LOG--------Entity 0 says: Node 0 is updated.
+
+           via
+ D0 |   1   2  
+----+----------
+   1|   7   7
+   2|   8   3
+   3|   6   5
+   4|   9   8
+
+main(): event received.  t=10011.513924297298, node=3
+  src=2, dest=3, contents=[3, 4, 0, 2, 5]
+falseLOG--------Entity 3 says: Node 3 is updated.
+         via
+ D3 |   1    2    4
+----+-------------
+   0|   6   5  11
+   1|   2   6   8
+   2|   6   2   8
+   4|   7   7   3
+
+main(): event received.  t=10012.201976773917, node=3
+  src=4, dest=3, contents=[8, 5, 5, 3, 0]
+falseLOG--------Entity 3 says: Node 3 is updated.
+         via
+ D3 |   1    2    4
+----+-------------
+   0|   6   5  11
+   1|   2   6   8
+   2|   6   2   8
+   4|   7   7   3
+
+main(): event received.  t=10012.915173248512, node=1
+  src=4, dest=1, contents=[8, 5, 5, 3, 0]
+LOG--------Entity 1 says: Node 1 is updated.
+
+         via
+ D1 |   0    3    4
+----+----------------
+   0|   7   7  13
+   2|   7   4  10
+   3|   9   2   8
+   4|  12   5   5
+
+main(): event received.  t=10014.336408368274, node=4
+  src=1, dest=4, contents=[7, 0, 4, 2, 5]
+LOG--------Entity 4 says: Node 4 is updated.
+
+         via
+ D4 |   1   3
+----+--------
+   0|   9   8
+   1|   5   5
+   2|   9   5
+   3|   7   3
+
+main(): event received.  t=10015.376593402345, node=0
+  src=1, dest=0, contents=[7, 0, 4, 2, 5]
+LOG--------Entity 0 says: Node 0 is updated.
+
+           via
+ D0 |   1   2  
+----+----------
+   1|   7   7
+   2|   8   3
+   3|   6   5
+   4|   9   8
+Simulator terminated at t=10015.376593402345, no packets in medium.
+	0	1	2	3	4	
+0:	0	7	3	5	8	
+1:	7	0	4	2	5	
+2:	3	4	0	2	5	
+3:	5	2	2	0	3	
+4:	8	5	5	3	0	
